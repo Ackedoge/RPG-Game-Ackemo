@@ -18,12 +18,17 @@ public class DamageEnemies : MonoBehaviour {
 
 	}
 
+    //skapar en collider som påvärkas av andra colliders
+
     private void OnTriggerEnter2D(Collider2D other)
     {
+        //om collidern rör vid ett objekt i unity med taggen "Enemy" körs följande kod
         if (other.gameObject.tag == "Enemy")
         {
             //Destroy(other.gameObject);
+            //lägger in en funktion till damageToGive variabeln så den kan justeras i unity
             other.gameObject.GetComponent<EnemyHpManager>().DmgEnemy(damageToGive);
+            //får fram objectet "damageBurst" som är en indikator för spelaren att den skadat en fiende
             Instantiate(damageBurst, hitPoint.position, hitPoint.rotation);
         }
     }
