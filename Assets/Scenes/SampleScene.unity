@@ -1444,6 +1444,29 @@ Prefab:
       propertyPath: m_Points.m_Paths.Array.data[2].Array.data[0].x
       value: 444.50583
       objectReference: {fileID: 0}
+    - target: {fileID: 1500752243088474, guid: 46b20d329662866449c59e336461393e, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1020802375695298, guid: 46b20d329662866449c59e336461393e, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23633917590766210, guid: 46b20d329662866449c59e336461393e,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: -855412229
+      objectReference: {fileID: 0}
+    - target: {fileID: 23633917590766210, guid: 46b20d329662866449c59e336461393e,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 23633917590766210, guid: 46b20d329662866449c59e336461393e,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46b20d329662866449c59e336461393e, type: 2}
   m_IsPrefabAsset: 0
