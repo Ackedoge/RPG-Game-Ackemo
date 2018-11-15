@@ -6,6 +6,7 @@ public class PlayerHpManager : MonoBehaviour {
 
     public float playerMaxHealth;
     public float playerCurrentHealth;
+    public float healthBarLength;
 
 	// Use this for initialization
 	void Start () {
@@ -18,6 +19,7 @@ public class PlayerHpManager : MonoBehaviour {
         if(playerCurrentHealth <= 0)
         {
             gameObject.SetActive(false);
+           // healthBarLegnth 
 
         }
 	}
