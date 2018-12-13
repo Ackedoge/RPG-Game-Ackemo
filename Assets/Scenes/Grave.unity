@@ -230,6 +230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelToLoad: SampleScene
+  exitPoint: Grave Out
 --- !u!1 &2062655397
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,6 +259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startDirection: {x: -1, y: 0}
+  pointName: Grave
 --- !u!4 &2062655399
 Transform:
   m_ObjectHideFlags: 0

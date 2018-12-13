@@ -180,6 +180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelToLoad: SampleScene
+  exitPoint: Town Right
 --- !u!1001 &220898576
 Prefab:
   m_ObjectHideFlags: 0
@@ -380,53 +381,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1487218132
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4991369310074000, guid: 58ab7809d61951049ab68291b2986204, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 4.751109
-      objectReference: {fileID: 0}
-    - target: {fileID: 4991369310074000, guid: 58ab7809d61951049ab68291b2986204, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -5.488891
-      objectReference: {fileID: 0}
-    - target: {fileID: 4991369310074000, guid: 58ab7809d61951049ab68291b2986204, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4991369310074000, guid: 58ab7809d61951049ab68291b2986204, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4991369310074000, guid: 58ab7809d61951049ab68291b2986204, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4991369310074000, guid: 58ab7809d61951049ab68291b2986204, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4991369310074000, guid: 58ab7809d61951049ab68291b2986204, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4991369310074000, guid: 58ab7809d61951049ab68291b2986204, type: 2}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 61246245367980456, guid: 58ab7809d61951049ab68291b2986204,
-        type: 2}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 58ab7809d61951049ab68291b2986204, type: 2}
-  m_IsPrefabAsset: 0
 --- !u!1001 &1579149038
 Prefab:
   m_ObjectHideFlags: 0
@@ -668,6 +622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startDirection: {x: 1, y: 0}
+  pointName: Forrest Left
 --- !u!4 &1990666910
 Transform:
   m_ObjectHideFlags: 0

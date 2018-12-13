@@ -73,7 +73,7 @@ public class SlimeController : MonoBehaviour
     {
         if (other.gameObject.name == "Player")
         {
-            //(Destroy(other.gameObject);
+            (Destroy(other.gameObject);
             other.gameObject.SetActive(false);
             reloading = true;
             thePlayer = other.gameObject;

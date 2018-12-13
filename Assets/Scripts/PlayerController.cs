@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     private bool attacking;
     public float attackTime;
     private float attackTimeCounter;
+    public string startPoint;
 
     // Lägger in animationsfunktionen och Rigidbody funktionen i playern
     void Start()
