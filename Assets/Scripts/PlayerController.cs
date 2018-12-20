@@ -71,7 +71,7 @@ public class PlayerController : MonoBehaviour
                 myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, 0f);
             }
 
-            if (Input.GetKeyDown(KeyCode.O))
+            if (Input.GetKeyDown(KeyCode.Z))
             {
                 attackTimeCounter = attackTime;
                 attacking = true;
