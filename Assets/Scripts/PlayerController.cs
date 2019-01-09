@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
     private float attackTimeCounter;
     public string startPoint;
 
-    // Lägger in animationsfunktionen och Rigidbody funktionen i playern
+    // Adding animationsfunktionen and Rigidbody function to the player
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // Lägger in alla rörelser
+    // Adding the movements
     void Update()
     {
 
@@ -41,16 +41,16 @@ public class PlayerController : MonoBehaviour
         if (!attacking)
         {
 
-            // Rörelse i "x-axeln" (horisontellt)
+            // Movement in "x-axis" (horisontally)
             if (Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f)
             {
-                //transform.Translate(new Vector3(Input.GetAxisRaw("Horizontal") * moveSpeed * Time.deltaTime, 0f, 0f));  => Funkar att gå med men inte om du ska ha collision physics
+                //transform.Translate(new Vector3(Input.GetAxisRaw("Horizontal") * moveSpeed * Time.deltaTime, 0f, 0f));  => Works to simply walk, but doesn't work with collision physics
                 myRigidbody.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * moveSpeed, myRigidbody.velocity.y);
                 playerMoving = true;
                 lastMove = new Vector2(Input.GetAxisRaw("Horizontal"), 0f);
             }
 
-            // Rörelse i "y-axeln" (Vertikalt)
+            // Movement in "y-axis" (Vertically)
             if (Input.GetAxisRaw("Vertical") > 0.5f || Input.GetAxisRaw("Vertical") < -0.5f)
             {
                 //transform.Translate(new Vector3(0f, Input.GetAxisRaw("Vertical") * moveSpeed * Time.deltaTime, 0f));
@@ -59,13 +59,13 @@ public class PlayerController : MonoBehaviour
                 lastMove = new Vector2(0f, Input.GetAxisRaw("Vertical"));
             }
 
-            // Om värdet på x axeln är under 0.5 och över -0.5 ska player sluta sin rörelse i x-led, utan denna glider player iväg
+            // If the value of the x-axis is less than 0.5 and more than -0.5 the player is gonna stop moving horisontally, without this the player will just slide away!
             if (Input.GetAxisRaw("Horizontal") < 0.5f && Input.GetAxisRaw("Horizontal") > -0.5f)
             {
                 myRigidbody.velocity = new Vector2(0f, myRigidbody.velocity.y);
             }
 
-            // Om värdet på y axeln är under 0.5 och över -0.5 ska player sluta sin rörelse i y-led, utan denna glider player iväg
+            // If the value of the y-axis is less than 0.5 and more than -0.5 the player is gonna stop moving vertically, without this the player will just slide away!
             if (Input.GetAxisRaw("Vertical") < 0.5f && Input.GetAxisRaw("Vertical") > -0.5f)
             {
                 myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, 0f);
@@ -91,7 +91,7 @@ public class PlayerController : MonoBehaviour
             anim.SetBool("PlayerAttacking", false);
         }
 
-        // Flytvärden som används i Unity för att räkna ut ifall playern ska ha animation eller rörelse, eller om den står still och i vilket håll
+        // The float numbers tells the engine (Unity) if the player needs animations or which way he should be facing.
         anim.SetFloat("MoveX", Input.GetAxisRaw("Horizontal"));
         anim.SetFloat("MoveY", Input.GetAxisRaw("Vertical"));
         anim.SetBool("PlayerMoving", playerMoving);
