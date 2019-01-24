@@ -6,14 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 0693c28a5bb33844999626717c3d7113
+  - enabled: 1
+    path: Assets/Scenes/StartRoom.unity
+    guid: 77ee070e40197e8448dbce8d4e7ca113
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Shed.unity
     guid: d882ce90599432641b1a0fa289a6447a
-  - enabled: 1
-    path: Assets/Scenes/StartRoom.unity
-    guid: 77ee070e40197e8448dbce8d4e7ca113
   - enabled: 1
     path: Assets/Scenes/ForrestZone.unity
     guid: 25f1b0be183b8534b96a3f5345e1ff52

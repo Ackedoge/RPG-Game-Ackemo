@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour {
 
     public Slider healthBar;
-    public Text HPtext;
     public PlayerHpManager playerHealth;
     private static bool UIExists;
 
@@ -15,7 +14,7 @@ public class UIManager : MonoBehaviour {
         if (!UIExists)
         {
             UIExists = true;
-            DontDestroyOnLoad(transform.gameObject);
+            DontDestroyOnLoad(transform.gameObject); 
         }
         else
         {
@@ -27,6 +26,5 @@ public class UIManager : MonoBehaviour {
 	void Update () {
         healthBar.maxValue = playerHealth.playerMaxHealth;
         healthBar.value = playerHealth.playerCurrentHealth;
-        HPtext.text = "HP: " + playerHealth.playerCurrentHealth + "/" + playerHealth.playerMaxHealth;
 	}
 }
